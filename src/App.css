@@ -19,11 +19,62 @@
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.App-Dashboard {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.leftMenu {
+  margin-top: 10vh;
+  margin-left: 5vh;
+  width: 20vh;
+  height: 40vh;
+  border: solid 1px black;
+  background-color: #595d65;
+  border-radius: 25px;
+}
+
+.panel {
+  margin-top: 10vh;
+  margin-left: 5vh;
+  width: 100vh;
+  height: 75vh;
+  border: solid 1px black;
+  background-color: #595d65;
+  border-radius: 25px;
+  float: left
+}
+
+.panel familyInfo {
+  float:left;
+  margin-left: 2vh;
+  margin-top: 2vh
+}
+
+.panel familyInfo span {
+  color: white;
+  margin-top: 2vh;
+  margin-right: auto;
+}
+
+.panel div {
+  margin-left: 2vh;
+  margin-top:1vh;
+  width: 20vh;
+  height: 10vh;
+  border: 1px solid white;
+  float: left
 }
 
 .App-link {
@@ -53,3 +104,4 @@
   position: inherit;
   font-size: 12px;
 }
+

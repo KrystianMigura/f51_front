@@ -1,7 +1,8 @@
 import React from 'react';
 import { Route, Redirect } from 'react-router-dom';
 import {Query} from "../query/query";
-import  Home  from "../components/home"
+import  Home  from "../components/home";
+import Admin from "../components/superAdmin";
 
 class PrivateRoute extends React.Component {
     constructor(props) {
@@ -15,6 +16,7 @@ class PrivateRoute extends React.Component {
         })
             .then(response => response.text())
             .then(transform => {
+                console.log(transform, "<<<<<<<<< TRANSFORM!!!!!!!")
                 const value = JSON.parse(transform);
                 this.setState({user: value});
                 this.setState({isLoad: !this.state.isLoad})
@@ -28,7 +30,7 @@ class PrivateRoute extends React.Component {
                     render={ () => (
                         this.state.user.error ? <Redirect to='/'/> : this.state.user.user.accountType === "SuperAdmin"
                         ?
-                        <div>Super Admin</div>
+                        <Admin />
                         :
                         <Home />
                     )}

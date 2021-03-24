@@ -1,7 +1,9 @@
-'use strict';
+
 import React from 'react';
 import {Query} from "../query/query";
 import sha256 from 'crypto-js/sha256';
+import ReactDOM from "react-dom";
+import RegisterUser from "./registerUser";
 
 class Login extends React.Component {
     constructor(props) {
@@ -21,7 +23,12 @@ class Login extends React.Component {
     }
 
     async register() {
-
+        ReactDOM.render(
+            <React.StrictMode>
+                <RegisterUser />
+            </React.StrictMode>,
+            document.getElementById('root')
+        );
     }
 
     render() {
