@@ -3,11 +3,15 @@ import React from 'react';
 import {Query} from "../query/query";
 import ReactDOM from "react-dom";
 import Myfamily from "./singleFamily";
+import {
+    Link,
+    Redirect
+} from "react-router-dom";
 
 class Admin extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {familyList: [], isLoad: true}
+        this.state = {familyList: [], isLoad: true, test: 0}
     }
 
     getFamilyList() {
@@ -34,13 +38,22 @@ class Admin extends React.Component {
             ReactDOM.render(<Myfamily _id={familyID} />, document.getElementById('panel'));
         }
     }
+    start = () => {
+        window.location.reload();
+    };
+
+    signOut() {
+        localStorage.clear();
+        window.location.reload();
+    }
 
     render() {
             return (
                 <div className="App">
                     <header className="App-Dashboard">
                         <div className="leftMenu">
-
+                            <button className="menuButton button" onClick={this.start}> Start</button>
+                            <button className="menuButton button" onClick={this.signOut} > Wyloguj</button>
                         </div>
                         <div className="panel" id="panel">
                             {!this.state.isLoad

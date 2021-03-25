@@ -15,6 +15,20 @@
   }
 }
 
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -45,6 +59,29 @@
   border-radius: 25px;
 }
 
+.leftMenu .menuButton {
+  width: 12vh;
+  height: 3vh;
+  background-color: #595d65; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+
+}
+
+.button {
+  background-color: white;
+  color: black;
+  border: 2px solid #008CBA;
+}
+
 .panel {
   margin-top: 10vh;
   margin-left: 5vh;
@@ -56,25 +93,57 @@
   float: left
 }
 
-.panel familyInfo {
-  float:left;
-  margin-left: 2vh;
-  margin-top: 2vh
-}
-
-.panel familyInfo span {
-  color: white;
-  margin-top: 2vh;
-  margin-right: auto;
+.familyChildren {
+  color: #FFF;
+  font-size: 2vh;
+  height: 15px;
 }
 
 .panel div {
   margin-left: 2vh;
   margin-top:1vh;
-  width: 20vh;
+  width: 28vh;
   height: 10vh;
-  border: 1px solid white;
+  /*border: 1px solid #595d65;*/
   float: left
+}
+
+.panel .family {
+  width: 90vh;
+  height: 6vh;
+}
+
+.panel .family .familyChildren {
+  height: 3vh;
+}
+
+.panel .familyList {
+  margin-top: 4vh;
+  height: 55vh;
+  float: left;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.panel .familyExpenses {
+  margin-top: 4vh;
+  height: 55vh;
+  width: 56vh;
+  float: left;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.familyList .element {
+  border: solid black 2px;
+  width: 22vh;
+  height: 5vh;
+}
+
+.familyExpenses .expense {
+  border: solid black 2px;
+  width: 50vh;
+  height: 5vh;
 }
 
 .App-link {
@@ -104,4 +173,51 @@
   position: inherit;
   font-size: 12px;
 }
+
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: rgba(0,0,0, 0);
+}
+div .popup_open {
+  position: relative;
+  left: 90%;
+  right: 25%;
+  top: 78%;
+  bottom: 25%;
+  margin: auto;
+  border-radius: 20px;
+  background: white;
+  z-index: 1000;
+  width: 100vh;
+  height: 87vh;
+  opacity: 0.8;
+  position: center;
+}
+
+.popup_open .panel {
+  margin-top: 5vh;
+  margin-left: 40vh;
+  width: 20vh;
+  height: 60vh;
+  background-color: #fff;
+  border: none;
+}
+
+.panel label {
+  position: inherit;
+  font-size: 12px;
+  color: #000;
+}
+
+.popup_open button {
+  margin-left: 50vh;
+}
+
 

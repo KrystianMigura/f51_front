@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d3c9880-9a81-4be6-aa6b-8445f620b59a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/privateRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/privateRoute.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/singleFamily.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/singleFamily.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/superAdmin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/superAdmin.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +37,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../F51" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -52,7 +52,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1616606261970</updated>
-      <workItem from="1616606266496" duration="12381000" />
+      <workItem from="1616606266496" duration="12597000" />
+      <workItem from="1616696588184" duration="12028000" />
     </task>
     <servers />
   </component>
@@ -64,9 +65,9 @@
       <screen x="0" y="0" width="1440" height="870" />
     </state>
     <state x="500" y="190" key="FileChooserDialogImpl/0.0.1440.870/1440.1.1280.994@0.0.1440.870" timestamp="1616606293193" />
-    <state x="416" y="167" width="607" height="536" key="find.popup" timestamp="1616615824156">
+    <state x="416" y="167" width="607" height="536" key="find.popup" timestamp="1616704783865">
       <screen x="0" y="0" width="1440" height="870" />
     </state>
-    <state x="416" y="167" width="607" height="536" key="find.popup/0.0.1440.870/1440.1.1280.994@0.0.1440.870" timestamp="1616615824156" />
+    <state x="416" y="167" width="607" height="536" key="find.popup/0.0.1440.870/1440.1.1280.994@0.0.1440.870" timestamp="1616704783865" />
   </component>
 </project>
