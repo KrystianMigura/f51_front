@@ -59,7 +59,7 @@ class Admin extends React.Component {
                             {!this.state.isLoad
                                 ?
                                 this.state.familyList.map((name, index) => {
-                                    return <div key={index} value={name._id} onClick={() => this.displaySelectedFamily(name._id)}>{name.FamilyName} <br /> {name.Money} zł</div>
+                                    return <div key={index} value={name._id} onClick={() => this.displaySelectedFamily(name._id)}>{name.FamilyName} <br /> {parseFloat(name.Money).toFixed(2)} zł</div>
                                 })
                                 :
                                 "Loading ..."

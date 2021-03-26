@@ -1,7 +1,6 @@
 'use strict';
 import React from 'react';
 import {Query} from "../query/query";
-import { Redirect } from 'react-router-dom';
 import sha256 from 'crypto-js/sha256';
 
 class RegisterUser extends React.Component {

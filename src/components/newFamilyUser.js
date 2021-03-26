@@ -7,10 +7,7 @@ class Popup extends React.Component {
     constructor(props) {
         super(props);
     }
-
-
-
-    async createUser(value){
+    async createUser(value, close){
         const data = {
             firstName: document.getElementById('fname').value,
             lastName: document.getElementById('lname').value,
@@ -21,8 +18,11 @@ class Popup extends React.Component {
             familyID: value.props.value._id
         };
 
+        const closePopup = value.props.closePopup;
+
         await Query.post('/adminCreate', data);
-        return this.props.closePopup;
+        closePopup();
+
     };
 
     render() {
@@ -41,7 +41,7 @@ class Popup extends React.Component {
                         <input type="text" id="email" name="email" />
                         <label htmlFor="password">Hasło: </label>
                         <input type="password" id="password" name="lname" />
-                        <button onClick={() => {this.createUser(this)}}>Stwórz</button>
+                        <button onClick={() => {this.createUser(this, this.props.closePopup)}}>Stwórz</button>
                     </div>
                 </div>
             </div>

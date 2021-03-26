@@ -32,7 +32,7 @@
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
-  display: flex;
+  /*display: flex;*/
   flex-direction: row;
   align-items: center;
   justify-content: center;
@@ -104,7 +104,7 @@
   margin-top:1vh;
   width: 28vh;
   height: 10vh;
-  /*border: 1px solid #595d65;*/
+  /*border: 1px solid #ffffff;*/
   float: left
 }
 
@@ -140,10 +140,24 @@
   height: 5vh;
 }
 
+.familyList div {
+  font-size: 12px;
+  border: 1px solid white;
+  width: 20vh;
+  height: 8vh;
+}
+
 .familyExpenses .expense {
-  border: solid black 2px;
+  border: solid black 1px;
   width: 50vh;
   height: 5vh;
+  font-size: 12px;
+}
+
+.expense div {
+  width: 10vh;
+  height: 3vh;
+  text-align: left;
 }
 
 .App-link {

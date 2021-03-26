@@ -5,6 +5,7 @@ class Query {
             'Content-Type': 'application/json',
             'Accept': '*/*',
             'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Methods': 'POST, PUT, GET',
             'Connection': 'keep-alive',
             'token': 'Berarer ' + token
         };
