@@ -1,12 +1,11 @@
-'use strict';
 import React from 'react';
 import {Query} from "../query/query";
 import sha256 from 'crypto-js/sha256';
 
 class RegisterUser extends React.Component {
-    constructor(props) {
-        super(props);
-    }
+    // constructor(props) {
+    //     super(props);
+    // }
 
     async createUser(){
         const data = {

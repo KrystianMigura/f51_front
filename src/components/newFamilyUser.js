@@ -4,9 +4,9 @@ import {Query} from "../query/query";
 
 class Popup extends React.Component {
 
-    constructor(props) {
-        super(props);
-    }
+    // constructor(props) {
+    //     super(props);
+    // }
     async createUser(value, close){
         const data = {
             firstName: document.getElementById('fname').value,

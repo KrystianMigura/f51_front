@@ -32,7 +32,7 @@ class PrivateRoute extends React.Component {
                         ?
                         <Admin />
                         :
-                        <Home />
+                        <Home value={this.state.user} />
                     )}
                 />
             )

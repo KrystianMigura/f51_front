@@ -9,7 +9,6 @@ class Myfamily extends React.Component {
     constructor(props) {
         super(props);
         this.state = {expenses: [], family: [], user: [], isLoad: true, _id: props.id, showPopup: false, showPopupMoney: false }
-        this.counter = 0;
     }
 
     componentDidMount() {

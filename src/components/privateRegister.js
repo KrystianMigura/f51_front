@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Redirect } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import RegisterAdmin from './../components/firstRegister';
 
 const PrivateRegister = ({ component: Component, countAdmin, ...rest }) => (

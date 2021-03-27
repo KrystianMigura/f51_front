@@ -3,10 +3,6 @@ import React from 'react';
 import {Query} from "../query/query";
 import ReactDOM from "react-dom";
 import Myfamily from "./singleFamily";
-import {
-    Link,
-    Redirect
-} from "react-router-dom";
 
 class Admin extends React.Component {
     constructor(props) {

@@ -4,11 +4,16 @@
     <list default="true" id="8d3c9880-9a81-4be6-aa6b-8445f620b59a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/firstRegister.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/firstRegister.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/moneyValue.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/moneyValue.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/newFamilyUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/newFamilyUser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/privateRegister.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/privateRegister.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/privateRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/privateRoute.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/registerUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/registerUser.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/singleFamily.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/singleFamily.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/superAdmin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/superAdmin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/query/query.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/query/query.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +63,7 @@
       <workItem from="1616606266496" duration="12597000" />
       <workItem from="1616696588184" duration="12028000" />
       <workItem from="1616779787214" duration="9702000" />
+      <workItem from="1616854231575" duration="12352000" />
     </task>
     <servers />
   </component>

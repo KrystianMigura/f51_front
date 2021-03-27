@@ -1,13 +1,8 @@
-'use strict';
 import React from 'react';
 import {Query} from "../query/query";
-import { Redirect } from 'react-router-dom';
 import sha256 from 'crypto-js/sha256';
 
 class RegisterAdmin extends React.Component {
-    constructor(props) {
-        super(props);
-    }
 
     async createAdmin(){
         const data = {
