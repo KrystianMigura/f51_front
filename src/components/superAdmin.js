@@ -52,10 +52,15 @@ class Admin extends React.Component {
                             <button className="menuButton button" onClick={this.signOut} > Wyloguj</button>
                         </div>
                         <div className="panel" id="panel">
+                            <p>Wybierz jeną z rodzin aby zapoznać się z szczegółami.</p>
                             {!this.state.isLoad
                                 ?
+                                this.state.familyList.length < 1
+                                ?
+                                    <div>Nie ma żadnej rodziny dodanej</div>
+                                :
                                 this.state.familyList.map((name, index) => {
-                                    return <div key={index} value={name._id} onClick={() => this.displaySelectedFamily(name._id)}>{name.FamilyName} <br /> {parseFloat(name.Money).toFixed(2)} zł</div>
+                                    return <div className="select" key={index} value={name._id} onClick={() => this.displaySelectedFamily(name._id)}>{name.FamilyName} <br /> {parseFloat(name.Money).toFixed(2)} zł</div>
                                 })
                                 :
                                 "Loading ..."

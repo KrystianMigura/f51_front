@@ -107,6 +107,10 @@
   float: left
 }
 
+.panel .select:hover {
+  background-color: #757981;
+}
+
 .panel .title {
   font-size: 18px;
   text-align: left;

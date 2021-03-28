@@ -81,7 +81,7 @@ class Myfamily extends React.Component {
                         />
                         : null
                     }
-                <button onClick={this.togglePopupMoney.bind(this)}>Zmień Saldo</button>
+                    <button onClick={this.togglePopupMoney.bind(this)}>Zmień Saldo</button>
                     {this.state.showPopupMoney ?
                         <PopupMoney
                             text='X' value={this.state.user}
@@ -102,7 +102,12 @@ class Myfamily extends React.Component {
                     <div className="familyExpenses">
                         {!this.state.isLoad
                             ?
+                            this.state.expenses[0].message === "Not Found"
+                            ?
+                                <div className="expense">Nie znaleziono żadnych wydatków tej rodziny.</div>
+                            :
                             this.state.expenses.map((expense, index) => {
+                                console.log(expense)
                                 return (<div className="expense" key={index}>
                                     <div>{expense.nickName}</div>
                                     <div>{expense.date}</div>

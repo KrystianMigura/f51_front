@@ -16,7 +16,6 @@ class PrivateRoute extends React.Component {
         })
             .then(response => response.text())
             .then(transform => {
-                console.log(transform, "<<<<<<<<< TRANSFORM!!!!!!!")
                 const value = JSON.parse(transform);
                 this.setState({user: value});
                 this.setState({isLoad: !this.state.isLoad})

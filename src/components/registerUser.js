@@ -1,6 +1,8 @@
 import React from 'react';
 import { Query } from "./../query/query";
 import sha256 from 'crypto-js/sha256';
+import {NotificationContainer} from "react-notifications";
+import {createNotification} from './notification'
 
 class RegisterUser extends React.Component {
     // constructor(props) {
@@ -17,7 +19,13 @@ class RegisterUser extends React.Component {
             accountType: "the_head_of_the_family"
         };
 
-        await Query.post('/adminCreate', data);
+        const callback = await Query.post('/adminCreate', data);
+        if(callback.valid){
+            createNotification('emailValid');
+            return null
+        }
+
+
         window.open("/", "_self");
     };
 
@@ -46,6 +54,7 @@ class RegisterUser extends React.Component {
                         <button onClick={this.back}>Powrót</button>
                     </div>
                 </header>
+                <NotificationContainer/>
             </div>
         )
     }

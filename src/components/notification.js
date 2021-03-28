@@ -15,6 +15,9 @@ export function createNotification (type)  {
         case 'noMoney':
             NotificationManager.warning("Twój wydatek nie został dodany.", "Brak tylu środków na koncie");
             break;
+        case 'emailValid':
+            NotificationManager.warning("Taki Email już istnieje.", "Podany Email już istnieje.");
+            break;
     }
 };
 
