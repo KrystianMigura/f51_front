@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d3c9880-9a81-4be6-aa6b-8445f620b59a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/notification.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/notification.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/privateRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/privateRoute.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/registerUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/registerUser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/singleFamily.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/singleFamily.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/superAdmin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/superAdmin.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +35,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="F:/strona www/frontend" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../F51" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -59,7 +54,8 @@
       <workItem from="1616696588184" duration="12028000" />
       <workItem from="1616779787214" duration="9702000" />
       <workItem from="1616854231575" duration="12352000" />
-      <workItem from="1616921519532" duration="9817000" />
+      <workItem from="1616921519532" duration="10413000" />
+      <workItem from="1616934545866" duration="49000" />
     </task>
     <servers />
   </component>
@@ -67,10 +63,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1884" y="218" key="FileChooserDialogImpl" timestamp="1616923045188">
-      <screen x="1440" y="1" width="1280" height="994" />
+    <state x="500" y="190" key="FileChooserDialogImpl" timestamp="1616934624210">
+      <screen x="0" y="0" width="1440" height="870" />
     </state>
-    <state x="500" y="190" key="FileChooserDialogImpl/0.0.1440.870/1440.1.1280.994@0.0.1440.870" timestamp="1616606293193" />
+    <state x="500" y="190" key="FileChooserDialogImpl/0.0.1440.870/1440.1.1280.994@0.0.1440.870" timestamp="1616934624210" />
     <state x="1884" y="218" key="FileChooserDialogImpl/0.0.1440.870/1440.1.1280.994@1440.1.1280.994" timestamp="1616923045188" />
     <state x="416" y="167" width="607" height="536" key="find.popup" timestamp="1616927718304">
       <screen x="0" y="0" width="1440" height="870" />
