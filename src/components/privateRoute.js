@@ -1,8 +1,8 @@
 import React from 'react';
 import { Route, Redirect } from 'react-router-dom';
-import {Query} from "../query/query";
-import  Home  from "../components/home";
-import Admin from "../components/superAdmin";
+import { Query } from "./../query/query";
+import  Home  from "./../components/home";
+import Admin from "./../components/superAdmin";
 
 class PrivateRoute extends React.Component {
     constructor(props) {

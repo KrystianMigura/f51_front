@@ -1,6 +1,6 @@
 
 import React from 'react';
-import {Query} from "../query/query";
+import { Query } from "./../query/query";
 import Popup from "./newFamilyUser";
 import PopupMoney from "./moneyValue"
 import { userEnum } from './enums';

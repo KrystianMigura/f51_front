@@ -1,5 +1,5 @@
 import React from 'react'
-import {Query} from "../query/query";
+import { Query } from "./../query/query";
 
 class PopupMoney extends React.Component {
 
@@ -12,6 +12,7 @@ class PopupMoney extends React.Component {
         const change = (document.getElementById('money')).value;
 
         await Query.put('/accountOperation', {familyID, change})
+
         closePopup();
 
     }

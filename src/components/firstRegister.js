@@ -1,6 +1,6 @@
 import React from 'react';
-import {Query} from "../query/query";
 import sha256 from 'crypto-js/sha256';
+import { Query } from './../query/query';
 
 class RegisterAdmin extends React.Component {
 

@@ -1,6 +1,6 @@
 
 import React from 'react';
-import {Query} from "../query/query";
+import {Query} from "./../query/query";
 import ReactDOM from "react-dom";
 import Myfamily from "./singleFamily";
 

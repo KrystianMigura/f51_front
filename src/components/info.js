@@ -1,4 +1,4 @@
-import {Query} from "../query/query";
+import { Query } from "./../query/query";
 
 const info = (async function() {
     const info = await Query.get('/isadmin').then(response => { return response.json();});

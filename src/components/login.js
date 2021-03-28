@@ -1,10 +1,12 @@
 
 import React from 'react';
-import {Query} from "../query/query";
+import { Query } from "./../query/query";
 import sha256 from 'crypto-js/sha256';
 import ReactDOM from "react-dom";
 import RegisterUser from "./registerUser";
-
+import 'react-notifications/lib/notifications.css';
+import {NotificationContainer} from 'react-notifications';
+import {createNotification} from './notification'
 class Login extends React.Component {
     constructor(props) {
         super(props);
@@ -13,8 +15,18 @@ class Login extends React.Component {
 
     async login() {
         const nick = document.getElementById('username').value;
-        const pass = sha256(document.getElementById('password').value).toString();
+        const pass = (document.getElementById('password').value !== "") ?sha256(document.getElementById('password').value).toString(): "";
+
+        if(nick === "" || pass === ""){
+            createNotification('info');
+            return null;
+        }
+
         const data = await Query.post('/login', {username: nick, password: pass});
+        if(data.message ===  "Unauthorized") {
+            createNotification('Unauthorized');
+            return null;
+        }
 
         localStorage.setItem('token', data.token)
         if(localStorage.getItem('token') !== undefined) {
@@ -44,7 +56,9 @@ class Login extends React.Component {
                         <button id="registerButton" onClick={this.register}>Rejestracja</button>
                     </div>
                 </header>
+                <NotificationContainer/>
             </div>
+
         )
     }
 }

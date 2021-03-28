@@ -9,7 +9,7 @@ import {
 import PrivateRoute from './components/privateRoute'
 import PrivateRegister from './components/privateRegister'
 import Login from './components/login';
-import Home from '../src/components/home'
+import Home from './../src/components/home'
 
 class App extends React.Component {
     constructor(props) {

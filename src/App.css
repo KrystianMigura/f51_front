@@ -60,12 +60,12 @@
 }
 
 .leftMenu .menuButton {
-  width: 18vh;
+  width: 16vh;
   height: 3vh;
   background-color: #595d65;
   border: none;
   color: white;
-  padding: 10px 32px;
+  padding: 10px 7px;
   text-align: left;
   text-decoration: none;
   display: inline-block;
@@ -148,7 +148,7 @@
 }
 
 .panel .family {
-  width: 90vh;
+  width: 100vh;
   height: 6vh;
 }
 
@@ -158,6 +158,7 @@
 
 .panel .familyList {
   margin-top: 4vh;
+  width: 25vh;
   height: 55vh;
   float: left;
   overflow-y: auto;
@@ -188,14 +189,15 @@
 
 .familyExpenses .expense {
   border: solid black 1px;
-  width: 50vh;
-  height: 5vh;
+  width: 55vh;
+  height: 8vh;
   font-size: 12px;
+  margin-left: 0;
 }
 
 .expense div {
-  width: 10vh;
-  height: 3vh;
+  width: 11vh;
+  height: 5vh;
   text-align: left;
 }
 

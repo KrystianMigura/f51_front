@@ -1,5 +1,5 @@
 import React from 'react';
-import {Query} from "../query/query";
+import { Query } from "./../query/query";
 import sha256 from 'crypto-js/sha256';
 
 class RegisterUser extends React.Component {

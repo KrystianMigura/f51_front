@@ -1,6 +1,7 @@
 import React from 'react';
-import {Query} from "../query/query";
+import { Query } from "./../query/query";
 import NewExpense from "./newExpense";
+import {NotificationContainer} from "react-notifications";
 
 class Home extends React.Component {
     constructor(props) {
@@ -18,6 +19,8 @@ class Home extends React.Component {
 
                 if(response[0].message === "Not Found")
                     response = [];
+
+                console.log(this.state.expenses , "<><>", response)
 
                 this.setState({expenses: response } );
                 return null;
@@ -53,36 +56,27 @@ class Home extends React.Component {
 
 
     componentDidMount() {
-
-        // new Promise((resolve, reject) => {
-        //     resolve(Query.post('/familyDetails',{"_id": this.state.user.familyID}))
-        // })
-        //     .then(response => response)
-        //     .then(transform => {
-        //         this.setState({family: transform});
-        //
-        //     });
         this.myFamilyDetails();
         this.setState({isLoad: !this.state.isLoad})
         this.myExpenses();
     }
-
-
 
     togglePopupMoney() {
 
         this.setState({
             showPopup: !this.state.showPopup
         });
-    this.myFamilyDetails();
-    this.myFamilyExpenses();
-    this.myExpenses();
-        // this.componentDidMount();
+        this.myFamilyDetails();
+        this.myFamilyExpenses();
+        this.myExpenses();
+    }
 
+    signOut() {
+        localStorage.clear();
+        window.location.reload();
     }
 
     render() {
-        console.log(this.state.isLoad , "<<<<<<<<< IS LOAD")
         if(!this.state.isLoad) {
             return (
                 <div className="App">
@@ -99,7 +93,7 @@ class Home extends React.Component {
                                 :
                                 null
                             }
-                            <button className="menuButton button"> Wyloguj</button>
+                            <button className="menuButton button" onClick={this.signOut}> Wyloguj</button>
                         </div>
 
                         <div className="panel" id="panel">
@@ -127,6 +121,7 @@ class Home extends React.Component {
                             </div>
                         </div>
                     </header>
+                    <NotificationContainer/>
                 </div>
             )
         } else {
